@@ -1,39 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  outline: 0;
   box-sizing: border-box;
 }
 
+html, body, #root {
+  min-height: 100%;
+}
+
 body {
+  background: rgb(11, 10, 13);
+  background-size: cover;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body, input, button {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 14px;
+  color: #fff;
 }
 
-div {
+.container {
+  margin: 30px auto 0;
+  max-width: 800px;
   width: 100%;
-  margin: 20px;
-}
-
-div li {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-div li + li {
-  margin-top: 15px;
+.content {
+  width: 100%;
+  background: rgb(32, 32, 36);
+  margin-top: 20px;
+  border-radius: 4px;
+  padding: 30px;
+}
+
+.slogan {
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+form input {
+  -webkit-appearance: none;
+  min-width: 200px;
+  margin-bottom: 10px;
+  width: calc(100% - 10px);
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #444;
+  border-radius: 2px;
+  height: 45px;
+  padding: 0 15px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 button {
+  border: 0;
+  border-radius: 2px;
+  margin-top: 15px;
+  width: 100%;
+  height: 42px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: bold;
   background: #7159c1;
   color: #fff;
-  border: 0;
-  padding: 10px 15px;
   cursor: pointer;
-  margin-top: 15px;
-  font-weight: bold;
-  font-size: 14px;
 }
 
-div li button {
+button:hover {
+  background: #7a63c7;
+}
+
+.list {
+  font-size: 18px;
+  width: 100%;
+  background: rgb(32, 32, 36);
+  margin-top: 20px;
+  border-radius: 4px;
+  padding: 30px;
+}
+
+.list a {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.list a:hover {
+  text-decoration: underline;
+  color: #ddd;
+}
+
+.list li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list li + li {
+  margin-top: 15px;
+}
+
+.list li button {
+  width: 100px;
   margin: 0 15px;
   background: #ca4949;
 }
